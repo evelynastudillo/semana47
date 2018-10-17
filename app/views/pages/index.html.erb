@@ -6,17 +6,14 @@
 <input type="text" value="75" class="dial" data-fgColor="lightgreen" data-angleOffset=90 data-linecap=round>
 <input type="text" value="75" class="dial" data-fgColor="lightblue" data-angleOffset=90 data-linecap=round>
 </div>
+.
+<div class="container" id="color" style="background-color:rgb(188,194,42);width: 550px;
+  height: 190px;"></div>
 <script>
 
-    $(function() {
-        $(".dial").knob({
-          'release': function() {
-            var color_rgb='rgb(' + $('#r').val() + ',' + $('#g').val() + ',' + $('#b').val() + ')';
-            $('#color').css('background-color',color_rgb);
-            var color_hex = '#' + d_a_h($('#r').val()) + d_a_h($('#g').val()) + d_a_h($('#b').val());
-            $('#color').text(color_hex);
-          }
-        });
-      });
+$(function(){
+$(".dial").knob()
+});
+
 
 </script>
